@@ -93,6 +93,8 @@
 
   <main id="contenido">
     <section class="hero" id="inicio">
+      <img class="hero-photo" src="assets/hero.jpg" alt="Perro en un interior, fotografía de ambiente">
+      <div class="hero-shade" aria-hidden="true"></div>
       <div class="wrap hero-grid">
         <div>
           <p class="eyebrow">Calle Ecuador · Cochabamba</p>
@@ -104,42 +106,45 @@
             <li><strong>Domingo</strong><span>cerrado</span></li>
           </ul>
         </div>
-        <div class="hero-side">
-          <figure class="shot">
-            <img src="assets/fachada.jpg" alt="Fachada de Clínica Veterinaria Super Pet, con el letrero de peluquería canina">
-          </figure>
-          <aside class="board" aria-label="Horario de hoy">
-            <p class="board-status" data-status>Consultando el horario…</p>
-            <h2>Hoy en la clínica.</h2>
-            <ul class="hours">
-              <li data-days="1,2,3,4,5">
-                <span>Lunes a viernes</span>
-                <strong>8:30–12:30<br>14:30–19:00</strong>
-              </li>
-              <li data-day="6">
-                <span>Sábado</span>
-                <strong>9:00–13:30</strong>
-              </li>
-              <li data-day="0">
-                <span>Domingo</span>
-                <strong>Cerrado</strong>
-              </li>
-            </ul>
-            <p class="board-note">Entre semana hay un corte al mediodía. El sábado atiende solo por la mañana.</p>
-            <a class="btn btn-sand" href="tel:+59144522781">Llamar al 4522781</a>
-          </aside>
-        </div>
+        <aside class="board" aria-label="Horario de hoy">
+          <p class="board-status" data-status>Consultando el horario…</p>
+          <h2>Hoy en la clínica.</h2>
+          <ul class="hours">
+            <li data-days="1,2,3,4,5">
+              <span>Lunes a viernes</span>
+              <strong>8:30–12:30<br>14:30–19:00</strong>
+            </li>
+            <li data-day="6">
+              <span>Sábado</span>
+              <strong>9:00–13:30</strong>
+            </li>
+            <li data-day="0">
+              <span>Domingo</span>
+              <strong>Cerrado</strong>
+            </li>
+          </ul>
+          <p class="board-note">Entre semana hay un corte al mediodía. El sábado atiende solo por la mañana.</p>
+          <a class="btn btn-sand" href="tel:+59144522781">Llamar al 4522781</a>
+        </aside>
       </div>
     </section>
 
     <section id="local">
-      <div class="wrap split">
-        <div>
-          <p class="eyebrow">El local</p>
-          <h2>El letrero azul de la esquina.</h2>
-          <p class="intro">La foto es de la ficha pública de Google. En las vidrieras se lee veterinaria, peluquería canina y Pet Saloon, estética animal. El nombre del frente es Super Pet.</p>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">El local</p>
+            <h2>El letrero azul de la esquina.</h2>
+          </div>
+          <p>Esta foto sí es del local: sale de la ficha pública de Google. En las vidrieras se lee veterinaria, peluquería canina y Pet Saloon, estética animal.</p>
         </div>
-        <p class="intro">Google no publica un número de puerta. El pin está en la calle Ecuador, esquina Junín, y el código del lugar es JR5Q+RV9.</p>
+        <article class="facade">
+          <img src="assets/fachada.jpg" alt="Fachada de Clínica Veterinaria Super Pet, con el letrero de peluquería canina">
+          <div class="facade-copy">
+            <h3>Calle Ecuador, esquina Junín</h3>
+            <p>Google no publica un número de puerta. El código del lugar es JR5Q+RV9.</p>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -154,16 +159,24 @@
         </div>
         <div class="cards">
           <article class="card">
-            <h3>Consulta</h3>
-            <p>Figura como hospital veterinario. Para una revisión, llama al 4522781 y pregunta el turno antes de llegar en el corte del mediodía.</p>
+            <img src="assets/consulta.jpg" alt="Perro recostado, fotografía de ambiente">
+            <div class="card-copy">
+              <h3>Consulta</h3>
+              <p>Figura como hospital veterinario. Para una revisión, llama al 4522781 y pregunta el turno antes de llegar en el corte del mediodía.</p>
+            </div>
+          </article>
+          <article class="card card-plain">
+            <div class="card-copy">
+              <h3>Cirugía y estudios</h3>
+              <p>En avisos del mismo local hablan de cirugía, laboratorio clínico y ecografía. Lo que corresponda a tu mascota se confirma por teléfono.</p>
+            </div>
           </article>
           <article class="card">
-            <h3>Cirugía y estudios</h3>
-            <p>En avisos del mismo local hablan de cirugía, laboratorio clínico y ecografía. Lo que corresponda a tu mascota se confirma por teléfono.</p>
-          </article>
-          <article class="card">
-            <h3>Peluquería canina</h3>
-            <p>Está pintada en la vidriera, junto a la estética animal. El corte y el baño se preguntan en el local: no hay una carta publicada.</p>
+            <img src="assets/peluqueria.jpg" alt="Corte de pelo canino, fotografía de ambiente">
+            <div class="card-copy">
+              <h3>Peluquería canina</h3>
+              <p>Está pintada en la vidriera, junto a la estética animal. El corte y el baño se preguntan en el local: no hay una carta publicada.</p>
+            </div>
           </article>
         </div>
       </div>
@@ -218,7 +231,7 @@
       <p>Lunes a viernes 8:30–12:30 y 14:30–19:00<br>Sábado 9:00–13:30 · Domingo cerrado</p>
       <p><a href="tel:+59144522781">4522781</a></p>
     </div>
-    <p class="legal wrap">La foto de la fachada es de la ficha pública de Google. © <span data-year>2026</span> Clínica Veterinaria Super Pet</p>
+    <p class="legal wrap">La fachada es de la ficha pública de Google. Las demás fotos son de ambiente, con licencia de Pexels, y no son de la clínica. © <span data-year>2026</span> Clínica Veterinaria Super Pet</p>
   </footer>
   <a class="call-float" href="tel:+59144522781" aria-label="Llamar al 4522781">Llamar</a>
   <script src="script.js"></script>
